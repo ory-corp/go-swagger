@@ -16,7 +16,7 @@ require (
 	github.com/go-openapi/strfmt v0.26.1
 	github.com/go-openapi/swag v0.25.5
 	github.com/go-openapi/swag/yamlutils v0.25.5
-	github.com/go-openapi/testify/v2 v2.4.1
+	github.com/go-openapi/testify/v2 v2.4.2
 	github.com/go-openapi/validate v0.25.2
 	github.com/go-swagger/scan-repo-boundary v0.0.0-20180623220736-973b3573c013
 	github.com/go-viper/mapstructure/v2 v2.5.0
@@ -76,3 +76,8 @@ require (
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+// TODO: Remove this replace once go-openapi/codescan#10 is merged and
+// a new go-swagger release includes it.
+// Upstream PR: https://github.com/go-openapi/codescan/pull/11
+replace github.com/go-openapi/codescan => github.com/ory-corp/codescan v0.33.3-0.20260409100508-57152d0521c8
